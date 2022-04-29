@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo list</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="task-input">
+      <div class="image">
+        <i data-feather="align-left"></i>
+      </div>
+      <input type="text" placeholder="Adicione uma nova tarefa">
+    </div>
+    <div class="controls">
+      <div class="filters">
+        <span id="all">Todas</span>
+        <span id="pending">Pendentes</span>
+        <span id="completed">Completas</span>
+      </div>
+      <button class="clear-btn">Limpar Tudo</button>
+    </div>
+    <ul class="task-box">
+      <li class="task">
+        <label for="1">
+          <input type="checkbox" id="1">
+          <p>Tarefa um</p>
+        </label>
+        <div class="settings">
+          <i data-feather="more-horizontal"></i>
+          <ul class="task-menu">
+            <li>
+            <i data-feather="edit-3"></i>Editar
+            </li>
+            <li>
+            <i data-feather="trash-2"></i>Deletar
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="task">
+        <label for="2">
+          <input type="checkbox" id="2">
+          <p>Tarefa dois</p>
+        </label>
+        <div class="settings">
+          <i data-feather="more-horizontal"></i>
+        </div>
+      </li>
+      <li class="task">
+        <label for="3">
+          <input type="checkbox" id="3">
+          <p>Tarefa tres</p>
+        </label>
+        <div class="settings">
+          <i data-feather="more-horizontal"></i>
+        </div>
+      </li>
+      <li class="task">
+        <label for="4">
+          <input type="checkbox" id="4">
+          <p>Tarefa quatro</p>
+        </label>
+        <div class="settings">
+          <i data-feather="more-horizontal"></i>
+        </div>
+      </li>
+      <li class="task">
+        <label for="5">
+          <input type="checkbox" id="5">
+          <p>Tarefa cinco</p>
+        </label>
+        <div class="settings">
+          <i data-feather="more-horizontal"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <script src="./script.js"></script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+</html>
